@@ -13,10 +13,10 @@ title: DevOps guide
 This project uses Gradle for **build automation and dependency management**. **You are recommended to read [this Gradle Tutorial from the se-edu/guides](https://se-education.org/guides/tutorials/gradle.html)**.
 
 
-Given below are how to use Gradle for some important project taskList.
+Given below are how to use Gradle for some important project tasks.
 
 
-* **`clean`**: Deletes the files created during the previous build taskList (e.g. files in the `build` folder).<br>
+* **`clean`**: Deletes the files created during the previous build tasks (e.g. files in the `build` folder).<br>
   e.g. `./gradlew clean`
 
 * **`shadowJar`**: Uses the ShadowJar plugin to creat a fat JAR file in the `build/lib` folder, *if the current file is outdated*.<br>

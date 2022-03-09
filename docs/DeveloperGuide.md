@@ -259,7 +259,7 @@ _{Explain here how the data archiving feature will be implemented}_
 
 * NUS professors
 * has a need to manage a significant number of contacts
-* has a need to keep track the taskList with the respective contacts
+* has a need to keep track the tasks with the respective contacts
 * prefer desktop apps over other types
 * prefers typing to mouse interactions
 * is reasonably comfortable using CLI apps
@@ -339,10 +339,10 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
   * 2a1. NUS Classes shows an error message.
   * Use case ends.
 
-**Use case: See all scheduled taskList**
+**Use case: See all scheduled tasks**
 
-1. User requests to see all taskList
-2. NUS Classes shows a list of scheduled taskList
+1. User requests to see all tasks
+2. NUS Classes shows a list of scheduled tasks
 
 **Extensions**
 
@@ -386,7 +386,7 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
 1. Should work on any _mainstream OS_ as long as it has Java `11` or above installed.
 2. Should be able to hold up to 1000 persons without a noticeable sluggishness in performance for typical usage.
-3. A user with above average typing speed for regular English text (i.e. not code, not system admin commands) should be able to accomplish most of the taskList faster using commands than using the mouse.
+3. A user with above average typing speed for regular English text (i.e. not code, not system admin commands) should be able to accomplish most of the tasks faster using commands than using the mouse.
 4. App should not exit or shut down without user explicit command.
 5. App should display relevant information within 2 seconds after user enter command.
 6. The information stored should not change without user explicit command.
