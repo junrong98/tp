@@ -1,4 +1,4 @@
-package seedu.address.model.person;
+package seedu.address.model.task;
 
 import java.time.LocalDateTime;
 
@@ -42,5 +42,13 @@ public class Task {
     @Override
     public String toString() {
         return this.name + " " + this.dateTime;
+    }
+
+    public LocalDateTime getDateTime() {
+        return this.dateTime;
+    }
+
+    public String getName() {
+        return this.name;
     }
 }

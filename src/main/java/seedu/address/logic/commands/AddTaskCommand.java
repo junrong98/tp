@@ -4,7 +4,6 @@ import static java.util.Objects.requireNonNull;
 import static seedu.address.logic.parser.CliSyntax.PREFIX_DATETIME;
 import static seedu.address.logic.parser.CliSyntax.PREFIX_TASKNAME;
 
-import java.time.DateTimeException;
 import java.time.LocalDateTime;
 
 import seedu.address.logic.commands.exceptions.CommandException;
@@ -25,11 +24,13 @@ public class AddTaskCommand extends Command {
             + PREFIX_TASKNAME + "John Doe "
             + PREFIX_DATETIME + "2022-12-25 1800";
 
+    public static final String COMMAND_WORD = "add task";
+    public static final String ADD_TASK_SUCCESS = "Task added!";
+
     private final String taskName;
     private final LocalDateTime dateTime;
 
-    public static final String COMMAND_WORD = "add task";
-    public static final String ADD_TASK_SUCCESS = "Task added!";
+
 
     /**
      * Constructor for AddTaskCommand. Takes in 2 parameters, taskName and dateTime

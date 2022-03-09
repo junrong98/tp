@@ -1,7 +1,8 @@
 package seedu.address.logic.parser;
 
 import static seedu.address.commons.core.Messages.MESSAGE_INVALID_COMMAND_FORMAT;
-import static seedu.address.logic.parser.CliSyntax.*;
+import static seedu.address.logic.parser.CliSyntax.PREFIX_DATETIME;
+import static seedu.address.logic.parser.CliSyntax.PREFIX_TASKNAME;
 
 import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
@@ -16,6 +17,14 @@ public class AddTaskCommandParser implements Parser<AddTaskCommand> {
     private final String dateTimePattern = "dd-MM-yyyy HHmm";
     private final SimpleDateFormat dateTimeFormatter = new SimpleDateFormat(dateTimePattern);
 
+    /**
+     * Parses the given {@code String} of arguments in the context of the AddTaskCommand
+     * and returns an AddTaskCommand object for execution.
+     *
+     * @param args String object of user input to be parsed.
+     * @return AddTaskCommand object
+     * @throws ParseException If the input does not conform to the expected format.
+     */
     public AddTaskCommand parse(String args) throws ParseException {
         ArgumentMultimap argMultimap = ArgumentTokenizer.tokenize(args, PREFIX_TASKNAME, PREFIX_DATETIME);
         if (!arePrefixesPresent(argMultimap, PREFIX_TASKNAME, PREFIX_DATETIME)
