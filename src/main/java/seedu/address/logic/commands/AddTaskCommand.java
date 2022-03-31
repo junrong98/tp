@@ -45,7 +45,7 @@ public class AddTaskCommand extends Command {
             + "Hint: for " + PREFIX_RECURRING + " you can use predefined values [annually, quarterly, monthly,"
             + " weekly, daily] for the period field.";
 
-    public static final String ADD_TASK_SUCCESS = "Task added!";
+    public static final String ADD_TASK_SUCCESS = "Task/s added!";
 
     private final String taskName;
     private final LocalDateTime dateTime;
